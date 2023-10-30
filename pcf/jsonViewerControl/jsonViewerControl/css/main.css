@@ -1,0 +1,94 @@
+/* Spinner Overlay */
+.spinner-overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
+/* Custom modal styles */
+.modal {
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: white; /* Set background color */
+    border-radius: 4px; /* Add border-radius for a rounded look */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add box-shadow for depth */
+    padding: 20px; /* Add padding for content */
+}
+
+/* Custom modal overlay styles */
+.modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Description modal styles */
+.description-modal {
+    width: 300px;
+    height: auto; /* Adjust height as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: white; /* Set background color */
+    padding: 20px; /* Add padding for content */
+    border-radius: 4px; /* Add border-radius for a rounded look */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add box-shadow for depth */
+}
+
+/* Description modal overlay styles */
+.description-modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.iconExpand {
+    font-size: 10;    
+}
+div.jsonViewer {
+    font-family: "Lucida Console", "Courier New", monospace;
+    overflow-y:scroll;
+    max-height: 500px;
+}
+
+.jsonLineItem {
+    line-height: 32px;
+    font-size: 12px;
+    
+}
+.jsonLineItem .attributeKey {
+    color: #00008B;
+}
+.jsonLineItem .attributeValue {
+    color: #008000;
+}
+.jsonLineItem .attributeValue.dataTypestring:before{
+    content: "\"";
+}
+.jsonLineItem .attributeValue.dataTypestring:after{
+    content: "\"";
+}
